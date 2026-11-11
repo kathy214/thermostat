@@ -1,0 +1,92 @@
+.wrap {
+  position: relative;
+}
+
+.ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 228deg,
+    #ffd268 0deg,
+    #ffe393 68deg,
+    #d9e8cf 136deg,
+    #bce8f4 206deg,
+    #9ce9ff 264deg,
+    #ffd268 264deg
+  );
+  box-shadow: inset 0 10rpx 14rpx rgba(255, 255, 255, 0.32);
+}
+
+.innerCutout {
+  position: absolute;
+  border-radius: 50%;
+  background: #f1f1f1;
+}
+
+.bottomMask {
+  position: absolute;
+  left: 50%;
+  bottom: -2rpx;
+  background: #f1f1f1;
+  transform: translateX(-50%);
+}
+
+.centerPanel {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #a9a9a9 0%, #8f8f8f 100%);
+  box-shadow:
+    inset 0 10rpx 10rpx rgba(255, 255, 255, 0.15),
+    0 8rpx 18rpx rgba(0, 0, 0, 0.12);
+  transform: translate(-50%, -50%);
+}
+
+.valueText {
+  color: #ffffff;
+  font-size: 24rpx;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.captionText {
+  margin-top: 8rpx;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14rpx;
+  text-align: center;
+}
+
+.knob {
+  position: absolute;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #ffffff;
+  background: #ffe08a;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.18);
+  transform: translate(-50%, -50%);
+}
+
+.knobDragging {
+  box-shadow:
+    0 0 0 10rpx rgba(255, 255, 255, 0.28),
+    0 4rpx 12rpx rgba(0, 0, 0, 0.18);
+}
+
+.knobDefault {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #ffe9a8 0%, #f6c95c 100%);
+}
+
+.knobImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}

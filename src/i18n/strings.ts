@@ -1,0 +1,26 @@
+export default {
+  en: {
+    title: 'Sauna Controlle',
+    timeText: 'Timer',
+    switchText: 'POWER',
+    lightText: 'LIGHT',
+    rgbText: 'RGB',
+    unitText: 'Temp Unit',
+    autoText: 'Auto Color ',
+    slectText: 'Select rgb',
+    saveText: 'save',
+    confirmText: 'confirm',
+  },
+  zh: {
+    title: '桑拿屋控制面板',
+    timeText: '时间',
+    switchText: '开关',
+    lightText: '灯光',
+    rgbText: '氛围灯',
+    unitText: '温度单位',
+    autoText: '自动变色',
+    slectText: '当前rgb',
+    saveText: '保存',
+    confirmText: '确定',
+  },
+};
