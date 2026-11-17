@@ -15,8 +15,6 @@ export function Home() {
   const switchDP = useProps(props => props.switch);
   // 目标温度: 18-65
   const tempSetDP = useProps(props => props.temp_set);
-  const tempMaxDP = useProps(props => props.upper_temp);
-  const tempMinDP = useProps(props => props.lower_temp);
   const lightDP = useProps(props => props.light);
   const tempUnitConvertDP = useProps(props => props.temp_unit_convert);
   const tempCurrentDP = useProps(props => props.temp_current);
@@ -28,8 +26,8 @@ export function Home() {
   // console.log('devInfo---->', devInfo);
 
   const timeList = [45, 60, 90];
-  const minTemp = tempMinDP || 18;
-  const maxTemp = tempMaxDP || 65;
+  const minTemp = 18;
+  const maxTemp = 65;
 
   const [bgColor, setBgColor] = useState('');
   const [show, setShow] = React.useState(false);
@@ -116,17 +114,17 @@ export function Home() {
     setShow(false);
   };
 
-  useEffect(() => {
-    // 设置失效时间
-    const today = Date.now();
-    const targetDay = new Date('2026-11-21');
-    console.log('组件挂载时执行',today > targetDay);
-      if(today > targetDay){
-        setExp(true)
-      }else[
-         setExp(false)
-      ]
-  }, []);
+  // useEffect(() => {
+  //   // 设置失效时间
+  //   const today = Date.now();
+  //   const targetDay = new Date('2026-11-21');
+  //   console.log('组件挂载时执行',today > targetDay);
+  //     if(today > targetDay){
+  //       setExp(true)
+  //     }else[
+  //        setExp(false)
+  //     ]
+  // }, []);
 
   return (
     <View className={styles.mainContent}>
